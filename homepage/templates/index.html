@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form action="/" method="post">
+		{% csrf_token %}
+		<input type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+	</form>
+	{% for i in qwe %}
+		<h5>{{ i }}</h5>
+	{% endfor %}
+	<h5>{{ asd|safe }}</h5>
+	<h5>{{ zxc|safe }}</h5>
+
+	{{ text1 }}<br>
+	{{ text2 }}<br>
+	{{ text3 }}
+
+</body>
+</html>
